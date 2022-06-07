@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E -c -save-temps main
+gcc -E main.c -o main
