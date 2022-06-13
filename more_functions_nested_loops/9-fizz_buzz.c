@@ -10,13 +10,13 @@ int main(void)
 	{
 		if (a % 15 == 0)
 			printf("FizzBuzz");
-		else if (i % 3 == 0)
+		else if (a % 3 == 0)
 			printf("Fizz");
-		else if (i % 5 == 0)
+		else if (a % 5 == 0)
 			printf("Buzz");
 		else
-			printf("%i", i);
-		if (i < 100)
+			printf("%i", a);
+		if (a < 100)
 			printf(" ");
 	}
 	printf("\n");
