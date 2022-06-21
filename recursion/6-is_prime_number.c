@@ -16,7 +16,7 @@ int primo(int n, int m)
 		return (0);
 	}
 	else
-		return (primo(n, m -1));
+		return (primo(n, m - 1));
 }
 /**
  * is_prime_number - function
