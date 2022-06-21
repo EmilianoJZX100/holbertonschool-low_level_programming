@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  * main - program that print its name
+ * @argc: argumento
+ * @argv: nombre programa
  * Return: 0
  */
 int main(int argc, char *argv[])
