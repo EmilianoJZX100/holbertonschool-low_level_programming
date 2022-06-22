@@ -4,7 +4,6 @@
  * main - prints all arguments it receives
  * @argc: nombre
  * @argv: argumentos
- * @a: int
  * Return: 0
  */
 int main(int argc, char *argv[])
