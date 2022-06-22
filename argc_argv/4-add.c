@@ -3,7 +3,8 @@
 #include <stdlib.h>
 /**
  * main - adds positive numbers
- * @sum: natural numbers
+ * @argc: programa
+ * @argv: argumento
  * Return: 0
  */
 int main(int argc, char *argv[])
@@ -11,7 +12,7 @@ int main(int argc, char *argv[])
 	int a;
 	int sum = 0;
 
-	if (argc == 0)
+	if (argc < 1)
 	{
 		return (0);
 	}
