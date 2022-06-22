@@ -3,11 +3,13 @@
 #include <stdlib.h>
 /**
  * main - adds positive numbers
+ * @sum: natural numbers
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
 	int a;
+	int sum = 0;
 
 	if (argc == 0)
 	{
@@ -20,6 +22,9 @@ int main(int argc, char *argv[])
 			printf("%s\n", "Error");
 			return (1);
 		}
+		sum += (atoi(argv[a]));
 	}
+	printf("%d\n", sum);
+
 	return (0);
 }
