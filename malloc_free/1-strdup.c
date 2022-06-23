@@ -18,6 +18,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	free(pr);
 	for (i = 0; i < size; i++)
 		pr[i] = str[i];
 
