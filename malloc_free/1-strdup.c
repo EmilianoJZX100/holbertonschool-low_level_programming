@@ -17,12 +17,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++)
-		pr[i] = str[i];
-
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	for (i = 0; i < size; i++)
+		pr[i] = str[i];
 	return (pr);
 }
