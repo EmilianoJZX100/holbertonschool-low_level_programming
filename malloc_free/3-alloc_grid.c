@@ -28,5 +28,6 @@ int **alloc_grid(int width, int height)
 			mirta[i][j] = 0;
 		}
 	}
+	free(mirta);
 	return (mirta);
 }
