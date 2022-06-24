@@ -1,26 +1,32 @@
 #include "main.h"
 /**
- *
+ * **alloc_grid -  returns a pointer to a 2 dimensional array of integers
+ * @width: ancho
+ * @height: alto
+ * Return: mirta
  */
-int **alloc_grid(int width, int height);
+int **alloc_grid(int width, int height)
 {
 	int i;
 	int j;
 	int **mirta;
 
+	if (width < 1)
+		return (NULL);
+	if (height < 1)
+		return (NULL);
 	mirta = malloc(width * height * sizeof(int));
 	if (mirta == NULL)
-	{
 		return (NULL);
-	}
-	for(i = 0; i < width; i++)
+	for (i = 0; i < height; i++)
 	{
-		for(j = 0; j < height; j++)
+		mirta[i] = malloc(width * sizeof(int));
+		if (mirta == NULL)
+			return (NULL);
+		for (j = 0; j < width; j++)
 		{
 			mirta[i][j] = 0;
-			j++;
 		}
-		i++;
 	}
 	return (mirta);
 }
