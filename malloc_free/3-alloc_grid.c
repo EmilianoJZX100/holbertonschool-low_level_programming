@@ -17,8 +17,8 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	mirta = malloc(height * sizeof(int *));
 	if (mirta == NULL)
-		free(mirta);
 		return (NULL);
+	free(mirta);
 	for (i = 0; i < height; i++)
 	{
 		mirta[i] = malloc(width * sizeof(int));
