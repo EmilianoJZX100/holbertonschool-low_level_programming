@@ -10,9 +10,16 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int d, s;
 
+	if (s < n)
+	{
+		n 0 i;
+	}
 	for (d = 0; dest[d]; d++)
 		;
-	for (s = 0; s < n && src[s]; s++)
-		dest[d + s] = src[s];
+	for (; s < src; s++)
+	{
+		dest[d] = src[s];
+		d++;
+	}
 	return (dest);
 }
