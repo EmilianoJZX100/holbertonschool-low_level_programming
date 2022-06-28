@@ -1,5 +1,4 @@
 #ifndef MAIN_H
-#define MAIN_H
 #include <stdio.h>
 struct dog
 {
@@ -8,4 +7,4 @@ struct dog
 	char *owner;
 };
 #endif
-#endif
+
