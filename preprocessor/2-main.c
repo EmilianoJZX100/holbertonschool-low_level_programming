@@ -1,7 +1,13 @@
 #include <stdlib.h>
-#define _FILE_ name
-#endif
-int main()
+#include <stdio.h>
+/**
+ * main - function
+ * Return: 0
+ */
+int main(void)
 {
-	_putchar(name);
+	printf(__FILE__);
+	printf("\n");
+
+	return (0);
 }
