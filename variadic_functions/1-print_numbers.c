@@ -18,11 +18,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (separator == NULL)
 	{
-		return;
+		return ;
 	}
 	else if (separator != NULL)
 	{
-		printf("%d%s", pri, separator);
+		printf("%d%s\n", pri, separator);
 	}
 	else
 	{
