@@ -18,15 +18,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (separator == NULL)
 	{
-		return ;
+		return;
 	}
 	else if (separator != NULL)
 	{
-		printf("%d%s\n", pri, separator);
+		printf("%d%s", pri, separator);
 	}
 	else
 	{
-		printf("%d\n", pri);
+		printf("%d", pri);
 	}
 	}
 	va_end(list);
