@@ -22,8 +22,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-		printf("%d\n", pri);
+		printf("%d", pri);
 		}
 	va_end(list);
+	printf("\n");
 	}
 }
