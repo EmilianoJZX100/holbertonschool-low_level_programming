@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			if (str == NULL)
 			{
 				printf("%s", str);
-				if (i < n - 1)
+				if (i < (n - 1) && separator)
 				{
 					printf("%s", separator);
 				}
@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			{
 				printf("(nil)");
 			}
-	va_end(list);
 	}
+	va_end(list);
 	printf("\n");
 }
