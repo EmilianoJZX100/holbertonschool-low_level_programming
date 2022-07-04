@@ -1,7 +1,7 @@
-CC = gcc
-SRC = main.c
-OBJ = main.o
-NAME = school
+CC= gcc
+SRC= main.c
+OBJ= main.o
+NAME= school
 all:
 	$(CC) $(SRC) $(OBJ) $(NAME) -o school.o school.c
 
