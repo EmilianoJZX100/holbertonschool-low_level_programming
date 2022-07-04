@@ -24,6 +24,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		pri = va_arg(list, int);
 		printf("%d\n", pri);
 		}
-	}
 	va_end(list);
+	}
 }
