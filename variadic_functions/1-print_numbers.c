@@ -18,6 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (separator != NULL)
 	{
+		pri = va_arg(list, int);
 		printf("%s%d", separator, pri);
 	}
 	else
