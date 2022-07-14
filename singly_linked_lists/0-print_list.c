@@ -1,6 +1,7 @@
 #include "lists.h"
 /**
  * print_list - prints the elements of list_t
+ * @h: node
  * Return: i
  */
 size_t print_list(const list_t *h)
