@@ -1,26 +1,23 @@
 #include "main.h"
 /**
  * create_file - function that creates a file
+ * @text_content: content of filename
  * Return: 1 on success, -1 on failure.
  */
 int create_file(const char *filename, char *text_content)
 {
-	FILE *fp;
-	int i;
+	int fp = -1;
 
 	if (!filename)
 		return (-1);
 	if (!text_content)
 	{
-		fp = fopen(filename, "rw");
+		fp = open(filename, O_RDWR | O_CREAT);
 		return (1);
 	}
-	fp = fopen(filename, "rw");
+	fp = open(filename, O_RDWR | O_CREAT | O_TRUNC | S_IRUSR | S_IWUSR);
 
-	for (i = 0; text_content[i] != '\n'; i++)
-	{
-		fputc(text_content[i], fp);
-	}
-	fclose(fp);
+	write(fp, text_content, strlen(text_content));
+	close(fp);
 	return (1);
 }
