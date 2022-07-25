@@ -54,6 +54,11 @@ void cp_func(const char *file_from, const char *file_to)
 			exit(99);
 		}
 	}
+	if (size_wr == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+		exit(99);
+	}
 	if (size_rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
