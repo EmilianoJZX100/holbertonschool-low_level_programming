@@ -10,10 +10,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int d, s = 0;
 
-	if (s < n)
-	{
-		n = s;
-	}
 	for (d = 0; dest[d]; d++)
 		;
 	while (src[s] != src[n])
